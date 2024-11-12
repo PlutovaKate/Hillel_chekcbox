@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+
+  color: rgba(255, 255, 255, 1);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  font-style: normal;
+}
+
+section {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+
+.registration-wrap {
+  max-width: 1240px;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background.jpg) no-repeat center / cover;
+  margin: 0 auto;
+}
+
+.registration {
+  width: 100%;
+  max-width: 496px;
+  margin-left: auto;
+  padding: 60px 78px;
+  text-align: center;
+
+  background: rgba(233, 233, 233, 0.25);
+  filter: blur(10%);
+
+  border: 2px solid red;
+}
+
+.button-link {
+  min-width: 168px;
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 9px;
+}
+
+.active-button {
+  background-color: rgba(21, 52, 22, 1);
+}
+
+.button-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 75px;
+  border: 1px solid rgba(21, 52, 22, 1);
+  border-radius: 30px;
+}
+
+form h1 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35.16px;
+  margin-bottom: 30px;
+}
+
+.input {
+  width: 100%;
+  background-color: rgba(146, 145, 145, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: transparent;
+  margin-bottom: 15px;
+}
+
+.input:last-child {
+  margin-bottom: 20px;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 1);
+}
+
+.checkbox-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-check-icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  background: rgba(21, 52, 22, 1);
+  border-radius: 2px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.active-link {
+  color: rgba(21, 52, 22, 1);
+
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.active-link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 30px;
+  border: transparent;
+  background: rgba(21, 52, 22, 1);
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 40px;
+}
+
+.button:hover {
+  background-color: rgba(146, 145, 145, 1);
+  color: rgba(21, 52, 22, 1);
+}
+
+.text-wrap {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.login-via {
+  margin-bottom: 20px;
+}
+
+.social-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-wrap svg {
+  color: #153416;
+}
+
+.social-wrap svg:hover {
+  color: rgba(255, 255, 255, 1);
+}
