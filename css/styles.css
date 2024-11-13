@@ -53,6 +53,11 @@ a {
   padding: 9px;
 }
 
+.button-link:hover {
+  background-color: rgba(146, 145, 145, 1);
+  color: rgba(21, 52, 22, 1);
+}
+
 .active-button {
   background-color: rgba(21, 52, 22, 1);
 }
@@ -79,8 +84,13 @@ form h1 {
   color: rgba(255, 255, 255, 1);
   padding: 15px 20px;
   border-radius: 30px;
-  border: transparent;
+  border: 1px solid transparent;
   margin-bottom: 15px;
+}
+
+.input:hover,
+.input:focus {
+  border: 1px solid rgba(21, 52, 22, 1);
 }
 
 .input:last-child {
@@ -105,12 +115,30 @@ form h1 {
 }
 
 .custom-check-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 15px;
   height: 15px;
+  padding: 3px;
   margin-right: 10px;
   background: rgba(21, 52, 22, 1);
   border-radius: 2px;
-  color: rgba(255, 255, 255, 1);
+}
+
+.custom-check-icon > svg {
+  display: none;
+  width: 9px;
+  height: 9px;
+}
+
+.custom-checkbox input:checked ~ .custom-check-icon > svg {
+  display: block;
+}
+
+.custom-checkbox input {
+  display: none;
 }
 
 .active-link {
@@ -131,7 +159,7 @@ form h1 {
   width: 100%;
   padding: 15px;
   border-radius: 30px;
-  border: transparent;
+  border: 1px solid transparent;
   background: rgba(21, 52, 22, 1);
   color: rgba(255, 255, 255, 1);
   margin-bottom: 40px;
@@ -141,6 +169,7 @@ form h1 {
 .button:focus {
   background-color: rgba(146, 145, 145, 1);
   color: rgba(21, 52, 22, 1);
+  border: 1px solid rgba(21, 52, 22, 1);
 }
 
 .text-wrap {
@@ -167,5 +196,15 @@ form h1 {
 }
 
 .social-wrap svg:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:focus svg {
   color: rgba(255, 255, 255, 1);
 }
