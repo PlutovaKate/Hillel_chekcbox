@@ -51,6 +51,8 @@ a {
   justify-content: center;
 
   padding: 9px;
+
+  transition: all 0.5s;
 }
 
 .button-link:hover {
@@ -86,6 +88,7 @@ form h1 {
   border-radius: 30px;
   border: 1px solid transparent;
   margin-bottom: 15px;
+  transition: all 0.5s;
 }
 
 .input:hover,
@@ -148,6 +151,8 @@ form h1 {
   text-decoration-style: solid;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+
+  transition: all 0.5s;
 }
 
 .active-link:hover,
@@ -163,6 +168,8 @@ form h1 {
   background: rgba(21, 52, 22, 1);
   color: rgba(255, 255, 255, 1);
   margin-bottom: 40px;
+
+  transition: all 0.5s;
 }
 
 .button:hover,
@@ -203,6 +210,10 @@ form h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.social-link svg {
+  transition: all 0.5s;
 }
 
 .social-link:focus svg {
